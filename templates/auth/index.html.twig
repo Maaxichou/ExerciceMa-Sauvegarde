@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+
+<form action="{{path('login')}}" method="post">
+    <label for="username">Email : </label>
+    <input name="_username" id="username" value="{{username}}">
+
+    <label for="password">Password : </label>
+    <input type="password" name="_password" id="password">
+
+    {# <input type="hidden" name="_target_path" value="{{path('dog')}}"/> #}
+
+    <button>Login</button>
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    Register
+{% endblock title %}
+
+{% block body %}
+<div class="col-12">
+    <h1 class="h3 mb-3 font-weight-normal">Enregistrez-vous</h1>
+
+    {{form_start(form)}}
+    {{form_widget(form)}}
+    <button class="btn btn-primary">S'enregistrer</button>
+    {{form_end(form)}}
+</div>
+    
+{% endblock body %}
